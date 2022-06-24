@@ -155,9 +155,7 @@ height: 600px;
 .overlay {
     max-width: 1600px;
     min-height: 600px;
-    background-image: linear-gradient(to right, 
-    rgba(47, 48, 58, 0.4)), 
-    url(../img/Img-header.jpeg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../img/Img-header.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-position: cover;
@@ -247,18 +245,18 @@ margin-right: 30px;
 }
 
 .icon-antenna::before {
-    background-image: url(../img/antenna\ 1\ \(1\).svg);
+    background-image: url(../img/svg/antenna\ 1.svg);
 }
 
 .icon-clock::before {
-background-image: url(../img/clock\ 1\ \(1\).svg);
+background-image: url(../img/svg/clock\ 1\.svg);
 }
 .icon-diagrama::before {
-background-image: url(../img/diagram\ 1\ \(1\).svg);
+background-image: url(../img/svg/diagram\ 1\.svg);
 }
 
 .icon-astronaut::before{
-background-image: url(../img/astronaut\ 1\ \(1\).svg );
+background-image: url(../img/svg/astronaut\ 1\.svg );
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -295,6 +293,7 @@ line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
 margin: 0;
+margin-bottom: 16px;
 }
 
 .our-team-text-container {
@@ -318,6 +317,17 @@ text-align: center;
 letter-spacing: 0.03em;
 margin: 0 0 10px;
 }
+
+.iteam::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #757575;
+}
+
+/* Section 4 clients */
+
+
 
 /* footer */
 footer {
@@ -545,4 +555,87 @@ text-decoration: none;
 
 .link.link-current {
     color: var(--accent-color);
+}
+
+.item-contact {
+    position: relative;
+    padding-left: 30px;
+}
+
+.item-contact::before {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.phone::before {
+    margin-right: 10px;
+    background-image: url(../img/svg/smartphone.svg);
+}
+
+.mail::before {
+    background-image: url(../img/svg/envelope.svg#normal);
+}
+
+.phone::before:hover,.mail::before:hover {
+    color: #188ce8;
+
+}
+
+
+.social-networks-text {
+    color: #FFFFFF;
+}
+
+.container-social {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    outline: 1px solid red;
+    justify-content: center;
+}
+
+.button-links:not(last-child){
+    margin-right: 10px;
+}
+
+
+.social {
+   list-style-type: none;
+}
+
+.button-links {
+    padding: 0;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.button-icons {
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+.button-icons:hover {
+    fill: #fff;
+    border-color: #2196F3;;
+}
+
+.actions {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: 1px solid red;
 }
