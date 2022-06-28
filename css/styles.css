@@ -277,7 +277,6 @@ font-size: 16px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: 0.03em;
-margin: 0;
 }
 
 .our-team-text-container {
@@ -307,7 +306,6 @@ margin: 0 0 10px;
     list-style: none;
     justify-content: center;
     padding: 0;
-    margin-bottom: 30px;
    
 }
 
@@ -359,11 +357,10 @@ margin: 0 0 10px;
 
 .client-box-link {
     display: flex;
-    display: block;
     justify-content: center;
     align-items: center;
-    width: 106px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -373,17 +370,19 @@ margin: 0 0 10px;
     
 }
 
-.client-box-link:hover,
-.client-box-link:focus{
-    color: var(--accent-color);
+
+.client-box-link:hover .client-box-logo,
+.client-box-link:focus .client-box-logo {
+    fill: var(--accent-color);
 }
 
-.client-box-link .client-box-logo:hover,
-.client-box-link .client-box-logo:focus {
-    fill: var(--accent-color);
+.client-box-link:hover,
+.client-box-link:focus {
     border: 1px solid var(--accent-color);
-    border-radius: 4px;
 }
+
+   
+
 
 
 /* .clienst-list {
@@ -392,6 +391,12 @@ margin: 0 0 10px;
 
 .client-box:not(:last-child) {
     margin-right: 30px;
+   
+}
+
+.client-box {
+    height: 92px;
+    width: calc(100% / 6 - 30px);
 }
 
 /* footer */
@@ -416,9 +421,6 @@ address {
 }
 
 .social-media-item-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -430,11 +432,12 @@ address {
     background-color: var(--accent-color);
 }
 
-}
-
 .social-media-link-footer {
-    display: inline-block;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .social-media-item-footer:not(:last-child){
@@ -450,7 +453,7 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: rgba(255, 255, 255, 1);
 } 
 
@@ -460,10 +463,6 @@ address {
  
 .footer-content {
     display: flex;
-}
-
-.footer {
-    display: ;
 }
 
 .social-footer {
