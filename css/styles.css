@@ -408,9 +408,67 @@ address {
     padding: 60px 0;
 }
 
+.social-media-footer {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.social-media-item-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
 
+.social-media-item-footer:hover,
+.social-media-item-footer:focus {
+    background-color: var(--accent-color);
+}
+
+}
+
+.social-media-link-footer {
+    display: inline-block;
+   
+}
+
+.social-media-item-footer:not(:last-child){
+    margin-right: 10px;
+}
+
+.title-footer{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 1);
+} 
+
+.social-media-icon-footer {
+    fill: #FFFFFF;
+}
  
+.footer-content {
+    display: flex;
+}
+
+.footer {
+    display: ;
+}
+
+.social-footer {
+    margin-left: 70px;
+}
 
 .studio-logo {
     color: #FFFFFF;
